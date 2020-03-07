@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  PhotoCompress
+
+  Created by Cirno MainasuK on 2018-8-6.
+  Copyright © 2018年 MainasuK. All rights reserved.
+*/
+
+"NSPhotoLibraryUsageDescription" = "从照片库导入文件";
+"NSCameraUsageDescription" = "用照相机扫描文件";

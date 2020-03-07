@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HorizontalMenuItemView" customModule="Project" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Aov-JQ-xKp" customClass="HorizontalMenuItemView" customModule="Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jA2-MN-keb">
+                    <rect key="frame" x="0.0" y="95" width="142" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="horizontal-menu-item-about" translatesAutoresizingMaskIntoConstraints="NO" id="ixk-Yi-4uv">
+                    <rect key="frame" x="38.5" y="20" width="65" height="65"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jA2-MN-keb" firstAttribute="top" secondItem="ixk-Yi-4uv" secondAttribute="bottom" constant="10" id="7HX-77-cON"/>
+                <constraint firstItem="ixk-Yi-4uv" firstAttribute="centerX" secondItem="Aov-JQ-xKp" secondAttribute="centerX" id="7Qa-Ae-J0i"/>
+                <constraint firstAttribute="trailing" secondItem="jA2-MN-keb" secondAttribute="trailing" id="DAg-fr-DzZ"/>
+                <constraint firstItem="jA2-MN-keb" firstAttribute="top" secondItem="ixk-Yi-4uv" secondAttribute="bottom" constant="10" id="L9T-GQ-oI7"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jA2-MN-keb" secondAttribute="bottom" constant="20" id="LbQ-FL-2t5"/>
+                <constraint firstItem="ixk-Yi-4uv" firstAttribute="top" secondItem="Aov-JQ-xKp" secondAttribute="top" constant="20" id="aLF-aH-29B"/>
+                <constraint firstItem="jA2-MN-keb" firstAttribute="leading" secondItem="Aov-JQ-xKp" secondAttribute="leading" id="vtz-kH-ukM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="ixk-Yi-4uv" id="8iN-jT-qnv"/>
+                <outlet property="titleLabel" destination="jA2-MN-keb" id="PHl-6E-Qsv"/>
+            </connections>
+            <point key="canvasLocation" x="-517.39130434782612" y="-447.32142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="horizontal-menu-item-about" width="65" height="65"/>
+    </resources>
+</document>

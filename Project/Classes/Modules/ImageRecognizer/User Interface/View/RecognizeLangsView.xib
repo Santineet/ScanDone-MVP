@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecognizeLangsView" customModule="Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odc-yf-YZL">
+                    <rect key="frame" x="0.0" y="44" width="414" height="356"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVW-dw-pgb">
+                    <rect key="frame" x="10" y="325" width="394" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="X9x-jo-jPc"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qJN-jx-Cd0" customClass="RecognizeLangTableView" customModule="Project" customModuleProvider="target">
+                    <rect key="frame" x="10" y="40" width="394" height="275"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="275" placeholder="YES" id="xxd-aJ-eHq"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="IB9-da-fma"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="dWC-Ve-u2b"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uVW-dw-pgb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="00z-Us-sgf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uVW-dw-pgb" secondAttribute="trailing" constant="10" id="7Wf-qK-hNW"/>
+                <constraint firstItem="qJN-jx-Cd0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Bgr-hS-HED"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Odc-yf-YZL" secondAttribute="trailing" id="FvM-6k-aFy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qJN-jx-Cd0" secondAttribute="trailing" constant="10" id="Kgj-h5-uC5"/>
+                <constraint firstItem="uVW-dw-pgb" firstAttribute="top" secondItem="qJN-jx-Cd0" secondAttribute="bottom" constant="10" id="Qk1-yD-lfu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uVW-dw-pgb" secondAttribute="bottom" constant="10" id="YwC-Da-o0R"/>
+                <constraint firstItem="Odc-yf-YZL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="br5-LE-nuS"/>
+                <constraint firstItem="Odc-yf-YZL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lbt-q9-Tfv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Odc-yf-YZL" secondAttribute="bottom" id="zTn-zo-tOO"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backView" destination="Odc-yf-YZL" id="TD3-Th-mEM"/>
+                <outlet property="cancelButton" destination="uVW-dw-pgb" id="4dm-X1-mig"/>
+                <outlet property="tableView" destination="qJN-jx-Cd0" id="EXF-qa-2Ou"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>

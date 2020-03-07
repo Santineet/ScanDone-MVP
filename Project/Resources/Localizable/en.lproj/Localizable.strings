@@ -1,0 +1,73 @@
+/* 
+  Localizable.strings
+  PhotoCompressor
+
+  Created by Cirno MainasuK on 2018-7-19.
+  Copyright © 2018年 MainasuK. All rights reserved.
+*/
+
+
+
+"Documents" = "Documents";
+"Press \" + \" to scan or import\nthe document" = "Press \" + \" to scan or import\nthe document"; //Press + to scan or import the document
+"Rename" = "Rename";
+"Delete" = "Delete";
+"Edit" = "Edit";
+"Share" = "Share";
+"Loading 100%" = "Loading 100%";
+"Select" = "Select";
+"Cancel" = "Cancel";
+"Select pages" = "Select pages";
+"Done" = "Done";
+"Delete" = "Delete";
+"Scanned" = "Scanned";
+"Document name" = "Document name";
+"Delete document" = "Delete document";
+"Copy" = "Copy";
+"Move" = "Move";
+"Save as PDF" = "Save as PDF";
+"Save as Image (PNG)" = "Save as Image (PNG)";
+"Save as Image (JPG)" = "Save as Image (JPG)";
+"Place the document on the screen" = "Place the document on the screen";
+"Save" = "Save";
+"Save (%ld)" = "Save (%ld)";
+"1. Scan Documents" = "1. Scan Documents";
+"2. Edit like a Pro" = "2. Edit like a Pro";
+"3. Save as PDF, Image or Text" = "3. Save as PDF, Image or Text";
+"4. Fast & Easy scans\nwith just one tap" = "4. Fast & Easy scans\nwith just one tap";
+"5. Recognize and copy\ntext from images" = "5. Recognize and copy\ntext from images";
+"Restore" = "Restore";
+"PREMIUM" = "PREMIUM";
+"Subscription" = "Subscription";
+"Contacts" = "Contacts";
+"Terms of service" = "Terms of service";
+"Privacy policy" = "Privacy policy";
+"Clear cache" = "Clear cache";
+"Coloured" = "Coloured";
+"Mono" = "Mono";
+"B/W" = "B/W";
+"Original" = "Original";
+"Do you want to Close?" = "Do you want to Close?";
+"Close" = "Close";
+"Please try again or contact us" = "Please try again or contact us";
+"Membership successfully restored!" = "Membership successfully restored!";
+"Activate your subscription" = "Activate your subscription";
+"3 days free trial, all subscriptions" = "3 days free trial, all subscriptions";
+"Payment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable." = "Subscription \n\nBeing a SaaS company, we provide our own OCR developments and arrange them as an application. We are constantly working to improve recognition algorithms and therefore our service is available only by subscription. \n\nAll subscription plans include: \n\nFull application functionality; \nUnlimited access to our OCR system; \n24/7 support by business standards; \nContinuous access to future app updates. \n\nThis app includes an optional auto-renewable subscription: one week with a three-days free trial period, one month with a three-days free trial period and one year with a three-days free trial period. Payment will be charged to iTunes Account at confirmation of purchase. Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable. \n\nPayment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.";
+"Weekly" = "Weekly";
+"Monthly" = "Monthly";
+"Year" = "Year";
+"Auto" = "Auto";
+"Manual" = "Manual";
+"Failed to get the user's authorization for camera." = "Failed to get the user's authorization for camera.";
+"Could not setup input device." = "Could not setup input device.";
+"Could not capture pitcure." = "Could not capture pitcure.";
+"Internal Error - Could not create CIImage" = "Internal Error - Could not create CIImage";
+"Drag and drop pages to change the order" = "Drag and drop pages to change the order";
+"%@ of %@" = "%@ of %@" ; // 1 of 23
+"1 page" = "1 page";
+"%ld pages" = "%ld pages";
+"1 item will be copied to:" = "1 item will be copied to:";
+"%ld items will be copied to:" = "%ld items will be copied to:";
+"1 item will be moved to:" = "1 item will be moved to:";
+"%ld items will be moved to:" = "%ld items will be moved to:";

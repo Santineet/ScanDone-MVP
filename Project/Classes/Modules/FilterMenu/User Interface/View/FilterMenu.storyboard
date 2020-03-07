@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Filter Menu View Controller-->
+        <scene sceneID="CS1-xm-pXf">
+            <objects>
+                <viewController storyboardIdentifier="FilterMenuViewController" id="co1-1T-GO6" customClass="FilterMenuViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YRr-h3-CY7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="496"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqh-Xs-uXY">
+                                <rect key="frame" x="0.0" y="54" width="414" height="442"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhf-Mc-Tu0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="442"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trK-tj-94i">
+                                                <rect key="frame" x="10" y="0.0" width="85" height="442"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="85" id="hDf-WY-b9G"/>
+                                                </constraints>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF7-Yb-KFU">
+                                                <rect key="frame" x="95" y="0.0" width="319" height="442"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewLayout key="collectionViewLayout" id="eEt-6f-Ks7" customClass="FilterMenuLayout" customModule="Project" customModuleProvider="target"/>
+                                                <cells/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="co1-1T-GO6" id="Ed6-tU-2xM"/>
+                                                    <outlet property="delegate" destination="co1-1T-GO6" id="Ajv-jp-k1I"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="dF7-Yb-KFU" secondAttribute="bottom" id="4Wg-Dp-HxC"/>
+                                            <constraint firstItem="trK-tj-94i" firstAttribute="leading" secondItem="Hhf-Mc-Tu0" secondAttribute="leading" constant="10" id="Bo3-vM-uJ7"/>
+                                            <constraint firstAttribute="bottom" secondItem="trK-tj-94i" secondAttribute="bottom" id="E3R-Di-FPG"/>
+                                            <constraint firstAttribute="trailing" secondItem="dF7-Yb-KFU" secondAttribute="trailing" id="RDs-rt-r4V"/>
+                                            <constraint firstItem="dF7-Yb-KFU" firstAttribute="leading" secondItem="trK-tj-94i" secondAttribute="trailing" id="bCz-yY-ixZ"/>
+                                            <constraint firstItem="dF7-Yb-KFU" firstAttribute="top" secondItem="Hhf-Mc-Tu0" secondAttribute="top" id="cZA-wY-kx3"/>
+                                            <constraint firstItem="trK-tj-94i" firstAttribute="top" secondItem="Hhf-Mc-Tu0" secondAttribute="top" id="eIt-Mh-HUH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Hhf-Mc-Tu0" secondAttribute="trailing" id="5g6-cf-vWH"/>
+                                    <constraint firstItem="Hhf-Mc-Tu0" firstAttribute="top" secondItem="dqh-Xs-uXY" secondAttribute="top" id="Cq6-RS-3Cb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hhf-Mc-Tu0" secondAttribute="bottom" id="tmZ-g1-IB7"/>
+                                    <constraint firstItem="Hhf-Mc-Tu0" firstAttribute="leading" secondItem="dqh-Xs-uXY" secondAttribute="leading" id="xpW-uZ-AJZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dqh-Xs-uXY" firstAttribute="top" secondItem="zPm-ZH-b05" secondAttribute="top" constant="10" id="A7B-bB-I1u"/>
+                            <constraint firstItem="dqh-Xs-uXY" firstAttribute="leading" secondItem="zPm-ZH-b05" secondAttribute="leading" id="CyS-3P-5PY"/>
+                            <constraint firstItem="zPm-ZH-b05" firstAttribute="bottom" secondItem="dqh-Xs-uXY" secondAttribute="bottom" id="hA6-c5-uSk"/>
+                            <constraint firstItem="zPm-ZH-b05" firstAttribute="trailing" secondItem="dqh-Xs-uXY" secondAttribute="trailing" id="iKJ-IL-tD8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zPm-ZH-b05"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="496"/>
+                    <connections>
+                        <outlet property="backBackgroundView" destination="trK-tj-94i" id="xFE-5V-pl8"/>
+                        <outlet property="collectionView" destination="dF7-Yb-KFU" id="rE2-U9-vPv"/>
+                        <outlet property="contentView" destination="dqh-Xs-uXY" id="iC7-Nc-Ite"/>
+                        <outlet property="shadowBackgroundView" destination="Hhf-Mc-Tu0" id="i3U-M9-b6G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wr6-Ox-rnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284.05797101449275" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+</document>

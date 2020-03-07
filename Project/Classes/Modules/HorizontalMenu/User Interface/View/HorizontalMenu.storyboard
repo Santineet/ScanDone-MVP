@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Horizontal Menu View Controller-->
+        <scene sceneID="CS1-xm-pXf">
+            <objects>
+                <viewController storyboardIdentifier="HorizontalMenuViewController" id="co1-1T-GO6" customClass="HorizontalMenuViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YRr-h3-CY7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="496"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqh-Xs-uXY">
+                                <rect key="frame" x="0.0" y="54" width="414" height="442"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF7-Yb-KFU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="442"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewLayout key="collectionViewLayout" id="eEt-6f-Ks7" customClass="HorizontalMenuLayout" customModule="Project" customModuleProvider="target"/>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="co1-1T-GO6" id="Ed6-tU-2xM"/>
+                                            <outlet property="delegate" destination="co1-1T-GO6" id="Ajv-jp-k1I"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dF7-Yb-KFU" secondAttribute="trailing" id="9HR-xx-7ZS"/>
+                                    <constraint firstItem="dF7-Yb-KFU" firstAttribute="top" secondItem="dqh-Xs-uXY" secondAttribute="top" id="M9k-mR-8vQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="dF7-Yb-KFU" secondAttribute="bottom" id="kwC-0T-L8B"/>
+                                    <constraint firstItem="dF7-Yb-KFU" firstAttribute="leading" secondItem="dqh-Xs-uXY" secondAttribute="leading" id="p3d-Yw-uYq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dqh-Xs-uXY" firstAttribute="top" secondItem="zPm-ZH-b05" secondAttribute="top" constant="10" id="A7B-bB-I1u"/>
+                            <constraint firstItem="dqh-Xs-uXY" firstAttribute="leading" secondItem="zPm-ZH-b05" secondAttribute="leading" id="CyS-3P-5PY"/>
+                            <constraint firstItem="zPm-ZH-b05" firstAttribute="bottom" secondItem="dqh-Xs-uXY" secondAttribute="bottom" id="hA6-c5-uSk"/>
+                            <constraint firstItem="zPm-ZH-b05" firstAttribute="trailing" secondItem="dqh-Xs-uXY" secondAttribute="trailing" id="iKJ-IL-tD8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zPm-ZH-b05"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="496"/>
+                    <connections>
+                        <outlet property="collectionView" destination="dF7-Yb-KFU" id="rE2-U9-vPv"/>
+                        <outlet property="contentView" destination="dqh-Xs-uXY" id="iC7-Nc-Ite"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wr6-Ox-rnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="137"/>
+        </scene>
+    </scenes>
+</document>

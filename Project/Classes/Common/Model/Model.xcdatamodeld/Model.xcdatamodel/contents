@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FileItem" representedClassName="FileItem" syncable="YES">
+        <attribute name="angleRaw" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="filterRaw" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" customClassName="FilterItem" syncable="YES"/>
+        <attribute name="folderId" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="order" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" customClassName="[Int]" syncable="YES"/>
+        <attribute name="originalQuadRaw" optional="YES" attributeType="Transformable" customClassName="[CGPoint]" syncable="YES"/>
+        <attribute name="quadRaw" optional="YES" attributeType="Transformable" customClassName="[CGPoint]" syncable="YES"/>
+    </entity>
+    <entity name="FolderItem" representedClassName="FolderItem" syncable="YES">
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FileItem" positionX="-63" positionY="9" width="128" height="150"/>
+        <element name="FolderItem" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>
